@@ -100,3 +100,62 @@ const soyIdx = foods.indexOf ('tofu');
 
 console.log('Exercise 8 result:', soyIdx);
 console.log('================================') 
+/*
+Exercise 9: Joining elements
+
+1) Use the `join()` method to concatenate the strings in the `foods` array, 
+   separated by ' -> '. 
+
+2) Assign the result to a variable called `allFoods`. 
+
+Note: The final result should log as:
+'taco -> sushi -> cupcake -> tofu -> cheeseburger'
+
+Complete Exercise 9 in the space below:
+*/
+
+let allFoods = foods.join(' -> ');
+
+
+console.log('Exercise 9 result:', allFoods);
+console.log('================================') 
+/*
+Exercise 10: Check for an element
+
+1) Using the .includes() method, check if the `foods` array contains the string
+   'soup'.
+
+2) Assign the result to a variable called `hasSoup``.
+
+Complete Exercise 10 in the space below:
+*/
+
+let hasSoup = foods.includes('soup');
+
+
+console.log('Exercise 10 result:', hasSoup);
+console.log('================================') 
+/*
+Exercise 11: Odd numbers from an array
+
+1) Choose a method to iterate through the `nums` array.
+
+2) Push each odd number to a new array named `odds`.
+
+Hint: Initialize the `odds` variable to an empty array before the iteration.
+
+Complete Exercise 11 in the space below:
+*/
+
+const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
+const odds = []
+
+nums.forEach(num => {
+   if (num % 2 !== 0) {
+      odds.push(num);
+   }
+});
+
+
+console.log('Exercise 11 result:', odds);
+console.log('================================') 
